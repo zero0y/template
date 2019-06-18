@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta charset="utf-8">
+ </head>
+ <body>
+	<h1>操作元素的属性</h1>
+	<img src="img/1.jpg" alt="1">
+	<script src="js/jquery-1.11.3.js"></script>
+	<script>
+		//单击图片，切换下一张
+		//1查找触发事件的元素
+		$("img")
+		//2绑定事件处理的函数
+		.click(function(){
+		//3查找要修改的元素
+		var $img=$(this);
+		//4修改的元素
+           //先获得img的alt属性的值
+		   var i=parseInt($img.attr("alt"));
+           //判断i的值 如果i<4 则 i 变为下一张图片 i+1 否则 i 重置  i=1
+		   i=i<4?i+1:1;
+		   //将下一张图片的值设置到src属性中
+		   $img.attr({src:`img/${i}.jpg`,alt:i})
+		})
+	
+	</script>
+ </body>
+</html>

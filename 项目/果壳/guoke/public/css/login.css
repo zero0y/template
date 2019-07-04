@@ -1,0 +1,61 @@
+.container{
+    padding-top: 30px;
+}
+/* 设置导航栏文字对齐方式 */
+ul>li{text-align: center}
+/* 设置导航栏a标签的属性 */
+.nav-item>a{ 
+    color: black;
+    font-size: 16px;
+    line-height: 24px; 
+}
+/* 设置导航栏第一项文字的大小 */
+span{
+    color: #4ba733;
+    font-size: 26px;
+}
+/* 设置导航栏第一项图片两端文字的对齐方式 */
+.nav-item>a img{
+    vertical-align:bottom;
+}
+/* 设置第一项a标签的左内边距清零 */
+.nav-item:first-child>a{
+    padding-left: 0px;
+}
+/* 设置导航栏中a标签悬停时的属性 */
+.nav-item>a:hover{ 
+    background-color: #4ba733;
+    color:white;
+}
+/* 设置导航栏中a标签选中时的属性 */
+.nav-pills>.nav-item>.nav-link.active{
+    color: #4ba733;
+    background-color: transparent;
+}
+/* 设置导航栏最右边的a标签向右浮动 */
+.align-right{
+    float:right;
+}
+/* 设置导航栏最右边的a标签的样式 */
+.align-right>.btn{ 
+    margin-right: 20px;
+    background-color: #4ba733;
+    color: aliceblue;
+}
+/* 设置一条分割线 */
+.xian{height: 20px;
+    border-bottom: 1px solid #808080;
+margin-bottom: 20px}
+
+/* 设置面板下span的字体大小 */
+.tab-content span{
+    font-size: 22px;
+}
+.tab-content ul>li{
+    text-align: left;
+    display: inline-block;
+    margin: 5px 0px 5px 0px;
+}
+.tab-content a{   
+    color: #808080
+}
